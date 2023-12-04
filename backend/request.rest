@@ -1,0 +1,67 @@
+POST http://localhost:3000/api/services
+Content-Type: application/json
+
+{
+    "name": "Algum Serviço 2",
+    "description": "Algumas dada Descrição",
+    "price": 1600,
+    "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+}
+
+###
+GET http://localhost:3000/api/services
+
+###
+GET http://localhost:3000/api/services/656dc75f4665de2ecf6be
+
+###
+DELETE http://localhost:3000/api/services/656dc86cf4d872e6c2666aff
+
+###
+PUT http://localhost:3000/api/services/656dc75f4665de2ecf6be161
+Content-Type: application/json
+
+{
+    "name": "Algum ServiçoS 2",
+    "description": "Algumas dadaS Descrição",
+    "price": 1800,
+    "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+}
+
+###
+POST http://localhost:3000/api/parties
+Content-Type: application/json
+
+{
+    "title": "Algum party 2321321",
+    "author": "Ron",
+    "description": "Festona",
+    "budget": 3000,
+    "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+    "services": [
+        {
+            "name": "Algum Serviço 3",
+            "description": "Algumas dada Descrição",
+            "price": 1600,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        },
+        {
+            "name": "Algum Serviço 4",
+            "description": "Algumas dada Descrição",
+            "price": 1500,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        },
+        {
+            "name": "Algum Serviço 5",
+            "description": "Algumas dada Descrição",
+            "price": 1600,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        }
+    ]
+}
+
+###
+GET http://localhost:3000/api/parties
+
+###
+GET http://localhost:3000/api/parties/656dde3a6d7ee0641344dc35
