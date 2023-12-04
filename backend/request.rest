@@ -65,3 +65,38 @@ GET http://localhost:3000/api/parties
 
 ###
 GET http://localhost:3000/api/parties/656dde3a6d7ee0641344dc35
+
+###
+DELETE http://localhost:3000/api/parties/656dde3a6d7ee0641344dc35
+
+###
+PUT http://localhost:3000/api/parties/656dde4e6d7ee0641344dc37
+Content-Type: application/json
+
+{
+    "title": "Algum party 2321321",
+    "author": "Ron",
+    "description": "Festona",
+    "budget": 5000,
+    "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png",
+    "services": [
+        {
+            "name": "Algum Serviço 3",
+            "description": "Algumas dada Descrição",
+            "price": 1600,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        },
+        {
+            "name": "Algum Serviço 4",
+            "description": "Algumas dada Descrição",
+            "price": 1500,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        },
+        {
+            "name": "Algum Serviço 5",
+            "description": "Algumas dada Descrição",
+            "price": 1600,
+            "image": "https://en.wikipedia.org/wiki/Image#/media/File:Image_created_with_a_mobile_phone.png"
+        }
+    ]
+}
